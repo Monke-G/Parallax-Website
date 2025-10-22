@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.image-1, .image-2, .image-3, .image-4 {
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+.image-1::after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(244,244,244,1), rgba(244,244,244,0.75), rgba(244,244,244,0.5), rgba(244,244,244,0.25), rgba(244,244,244,0));
+}
+.image-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 75%;
+    background: linear-gradient(to bottom, rgba(244,244,244,1), rgba(244,244,244,0.75), rgba(244,244,244,0.5), rgba(244,244,244,0.25), rgba(244,244,244,0));
+}
+.image-3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 75%;
+    background: linear-gradient(to bottom, rgba(49, 53, 52,1), rgba(49, 53, 52,0.75), rgba(49, 53, 52,0.5), rgba(49, 53, 52,0));
+}
+.image-2::after, .image-3::after {
+    content: '';
+    position: absolute;
+    top: 75%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(49, 53, 52,1), rgba(49, 53, 52,0.75), rgba(49, 53, 52,0.5), rgba(49, 53, 52,0));
+}
+.image-4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60%;
+    background: linear-gradient(to bottom, rgba(49, 53, 52,1), rgba(49, 53, 52,0.75), rgba(49, 53, 52,0.5), rgba(49, 53, 52,0));
+}
+.image-1 {
+    background-image: url(image1.png);
+    min-height: 800px;
+}
+.image-2 {
+    background-image: url(image2.png);
+    min-height: 400px;
+}
+.image-3 {
+    background-image: url(image3.png);
+    min-height: 400px;
+}
+.image-4 {
+    background-image: url(image1.png);
+    min-height: 800px;
+}
+.image-1 span, .image-2 span, .image-3 span, .image-4 span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 40px;
+    background-color: #313534;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+
+    padding: 15px;
+    border-radius: 5px;
+}
+.image-2 span, .image-3 span {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+.section-1, .section-2, .section-3 {
+    background-color: rgb(244, 244, 244);
+    text-align: center;
+    padding: 25px 0px;
+}
+.section-1 h2, .section-2 h2, .section-3 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+}
+.section-1 p, .section-2 p, .section-3 p {
+    padding: 10px 225px;
+    color: grey;
+}
+.section-2, .section-3 {
+    background-color: #313534;
+    color: white;
+}
+
